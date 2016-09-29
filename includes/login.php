@@ -5,7 +5,7 @@
 		
 		<div class="row centered">
 			<div class="col">
-				<form action="../SoccerGamble/controllers/loginprocess.php" method="POST">	
+				<form action="../soccergamble_git/controllers/loginprocess.php" method="POST">	
 					<p>
 						<input type="text" name="username" placeholder="Gebruikersnaam" required>
 					<br>

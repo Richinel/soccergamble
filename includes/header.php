@@ -21,16 +21,16 @@
 <?php
 session_start();
 if(ISSET($_SESSION['username'])) {
-	include('../SoccerGamble/models/profile.php');
-	include('../SoccerGamble/controllers/initProfile.php');
-	include('../SoccerGamble/includes/mobile_menu_logged.php');
-	include('../SoccerGamble/includes/navbar_loggedin.php');
-	include('../SoccerGamble/includes/logoutbox.php');
-	include('../SoccerGamble/includes/user_profile.php');
+	include('../soccergamble_git/models/profile.php');
+	include('../soccergamble_git/controllers/initProfile.php');
+	include('../soccergamble_git/includes/mobile_menu_logged.php');
+	include('../soccergamble_git/includes/navbar_loggedin.php');
+	include('../soccergamble_git/includes/logoutbox.php');
+	include('../soccergamble_git/includes/user_profile.php');
 }
 else {
-	include('../SoccerGamble/includes/nav.php');
-	include('../SoccerGamble/includes/mobile_menu.php');
+	include('../soccergamble_git/includes/nav.php');
+	include('../soccergamble_git/includes/mobile_menu.php');
 }
 ?>
 

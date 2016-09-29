@@ -7,7 +7,7 @@
 			Om te kunnen wedden moet u een account hebben. Maak nu snel en gratis een account aan en ontvang 25 credits cadeau!
 		</p>
 
-		<form action='../SoccerGamble/controllers/registerprocess.php' method='POST'>
+		<form action='../soccergamble_git/controllers/registerprocess.php' method='POST'>
 			<p>
 				<input type="text" name="username" placeholder="Kies een gebruikersnaam" required>
 			<br>
