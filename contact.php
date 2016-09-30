@@ -3,7 +3,7 @@
 
 	<div class="content">
 		<div class="wrapper">
-			<h2>Contact</h2>
+			<h3>Contact</h3>
 			<hr>
 			<p>
 				Heeft u vragen en/of opmerkingen? Dan kunt u via dit formulier contact met ons opnemen. Uiteraard kunt u ons ook altijd bellen op 010 - 495 87 32. <br>

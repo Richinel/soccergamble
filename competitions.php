@@ -3,7 +3,7 @@
 
 	<div class="content">
 		<div class="wrapper">
-			<h2>Competities</h2>
+			<h3>Competities</h3>
 			<hr>
 			
 			<p>
