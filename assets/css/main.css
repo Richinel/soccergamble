@@ -516,6 +516,9 @@ a:hover {
 .capitalize {
   text-transform: capitalize;
 }
+input {
+  border-color: #95b2ea !important;
+}
 footer {
   background-color: #404040;
   min-height: 150px;
@@ -595,7 +598,7 @@ footer .wrapper table td a:hover {
   .register .login_box,
   .login .register_box,
   .register .register_box {
-    margin: 20px !important;
+    margin: :auto;
   }
   .login .login_box form,
   .register .login_box form,

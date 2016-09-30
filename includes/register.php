@@ -1,4 +1,4 @@
-<div class="register" id="id01">
+<div class="register" id="id02">
 	<div class="register_box">
 		<img class="close" src="assets/images/close.png">
 		<h3>Registreren</h3>
