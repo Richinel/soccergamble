@@ -4,6 +4,8 @@
     data-cycle-slides="> .slider"
     >
 
+     <div class="cycle-pager"></div>
+
 <div class="slider">
     <div class="s_content">
         <h3>Manchester United - Manchester City</h3>

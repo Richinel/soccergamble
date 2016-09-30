@@ -177,6 +177,7 @@ a:hover {
   background-repeat: no-repeat;
   min-height: 400px;
   height: auto;
+  position: relative;
 }
 .slider .s_content {
   color: white !important;
@@ -692,6 +693,32 @@ footer .wrapper table td a:hover {
   background-image: linear-gradient(to bottom, #819bcb, #536f9d);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#819bcb, endColorstr=#536f9d);
 }
+.cycle-slideshow {
+  position: relative;
+}
 .cycle-slideshow div {
   width: 100%;
+  position: relative;
+}
+.cycle-pager {
+  text-align: center;
+  width: 100%;
+  z-index: 500;
+  position: absolute;
+  bottom: 50px;
+  overflow: hidden;
+}
+.cycle-pager span {
+  font-size: 50px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  color: #727272;
+  cursor: pointer;
+}
+.cycle-pager span.cycle-pager-active {
+  color: #95b2ea;
+}
+.cycle-pager > * {
+  cursor: pointer;
 }
