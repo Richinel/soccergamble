@@ -511,13 +511,10 @@ a:hover {
   width: 100%;
 }
 .btns_right_align {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  padding-top: 60px;
+  padding-top: 20px;
 }
-.btns_right_align button {
-  margin-left: 10px;
+.capitalize {
+  text-transform: capitalize;
 }
 footer {
   background-color: #404040;

@@ -5,7 +5,7 @@
 			</a>
 			
 			<div class="nav_btns">
-				<button class="button primary profile_btn"><?php echo "Welkom, ", $_SESSION['username']; ?></button>
+				<button class="button primary upper profile_btn"><?php echo "Welkom, <span class='capitalize'>", $_SESSION['username']; ?></button>
 				<button class="button primary outline upper logout_btn">Uitloggen</button>
 			</div>
 		</div>

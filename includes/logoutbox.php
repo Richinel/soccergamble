@@ -8,7 +8,7 @@
 		</p>
 
 		<div class="btns_right_align">
-			<button id='uitloggen' class="button outline danger" onclick="window.location.href = '../SoccerGamble/controllers/logout.php';">
+			<button id='uitloggen' class="button outline danger" onclick="window.location.href = '../soccergamble_git/controllers/logout.php';">
 				Uitloggen
 			</button>
 

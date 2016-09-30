@@ -7,7 +7,7 @@
 			<div class="col">
 				<form action="../soccergamble_git/controllers/loginprocess.php" method="POST">	
 					<p>
-						<input type="text" name="username" placeholder="Gebruikersnaam" required>
+						<input type="text" class="capitalize" name="username" placeholder="Gebruikersnaam"  required>
 					<br>
 					<br>
 						<input type="password" name="password" placeholder="Wachtwoord" required>

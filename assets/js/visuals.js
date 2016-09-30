@@ -1,45 +1,45 @@
 var main = function() {
 	$('.login_btn_header').click(function() {
-    	$('.login').fadeToggle(300);
+    	$('.login').fadeToggle(150);
     });
 
     $('.register_btn_header').click(function() {
-        $('.register').fadeToggle(300);
+        $('.register').fadeToggle(150);
     })
 
     $('.login_ul').click(function() {
-    	$('.login').fadeToggle(300);
+    	$('.login').fadeToggle(150);
     });
 
     $('.register_ul').click(function() {
-        $('.register').fadeToggle(300);
+        $('.register').fadeToggle(150);
     });
 
     $('.logout_btn').click(function() {
-        $('.messagebox').fadeToggle(300);
+        $('.messagebox').fadeToggle(150);
     });
 
     $('.uitloggen_m').click(function() {
-        $('.messagebox').fadeToggle(300);
+        $('.messagebox').fadeToggle(150);
     });
 
     $('.profile_btn').click(function() {
-        $('.profile').fadeToggle(300);
+        $('.profile').fadeToggle(150);
     });
 
     $('.mobile_profile').click(function() {
-        $('.profile').fadeToggle(300);
+        $('.profile').fadeToggle(150);
     });
 
     $('.close').click(function() {
-    	$('.login').fadeOut(300);
-        $('.register').fadeOut(300);
-        $('.profile').fadeOut(300);
-        $('.messagebox').fadeOut(300);
+    	$('.login').fadeOut(150);
+        $('.register').fadeOut(150);
+        $('.profile').fadeOut(150);
+        $('.messagebox').fadeOut(150);
     });
 
     $('.close_btn').click(function() {
-        $('.messagebox').fadeToggle(300);
+        $('.messagebox').fadeToggle(150);
     });    
 
     $('.mnu_btn').click(function() {
