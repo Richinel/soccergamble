@@ -26,7 +26,7 @@
 					</a>
 				</li>
 				<li>Hoe werkt het?</li>
-				<li>FAQ</li>
+				<li><a href="faqpage.php">FAQ</a></li>
 				<li><a href="contact.php">Contact</a></li>
 			</ul>
 		</div>

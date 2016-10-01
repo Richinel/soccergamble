@@ -34,6 +34,16 @@ a {
 a:hover {
   color: #4074d9 !important;
 }
+textarea {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.admin_ul {
+  float: right;
+  position: relative !important;
+  bottom: 30px;
+  text-align: right;
+}
 .nav {
   position: absolute;
   left: 0;

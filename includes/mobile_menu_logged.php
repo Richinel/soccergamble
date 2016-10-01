@@ -26,16 +26,24 @@
 				<i class="fa fa-info-circle" aria-hidden="true"></i>
 				Hoe werkt het?
 			</li>
-			<li>
-				<i class="fa fa-question-circle" aria-hidden="true"></i>
-				FAQ
-			</li>
+			<a href="faqpage.php">
+				<li>
+					<i class="fa fa-question-circle" aria-hidden="true"></i>
+					FAQ
+				</li>
+			</a>
 			<a href="contact.php">
 				<li>
 					<i class="fa fa-phone-square" aria-hidden="true"></i>
 					Contact
 				</li>
 			</a>
+			<?php if($_SESSION['rights'] == 3) { ?>
+				<li class="success">
+					<i class="fa fa-lock" aria-hidden="true"></i>
+					Admin Tools
+				</li>
+			<?php } ?>
 		</ul>
 	</p>
 	<p>

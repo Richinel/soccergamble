@@ -26,8 +26,12 @@
 					</a>
 				</li>
 				<li>Hoe werkt het?</li>
-				<li>FAQ</li>
+				<li><a href="faqpage.php">FAQ</a></li>
 				<li><a href="contact.php">Contact</a></li>
+
+			<?php if($_SESSION['rights'] == 3) { ?>
+				<li class="success">Admin Tools</li>
+			<?php }; ?>
 			</ul>
 		</div>
 	</div>

@@ -1,4 +1,4 @@
-<div class="messagebox">
+<div class="messagebox lg_box">
 	<div class="messagebox_body">
 	<img class="close" src="assets/images/close.png">
 		<h3>Uitloggen</h3>

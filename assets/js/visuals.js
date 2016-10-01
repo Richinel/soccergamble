@@ -16,11 +16,15 @@ var main = function() {
     });
 
     $('.logout_btn').click(function() {
-        $('.messagebox').fadeToggle(150);
+        $('.lg_box').fadeToggle(150);
     });
 
     $('.uitloggen_m').click(function() {
-        $('.messagebox').fadeToggle(150);
+        $('.lg_box').fadeToggle(150);
+    });
+
+    $('.add_faq').click(function() {
+        $('.af').fadeToggle(150);
     });
 
     $('.profile_btn').click(function() {
