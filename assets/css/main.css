@@ -490,6 +490,9 @@ textarea {
 .profile .social_login .gp {
   color: #f34248;
 }
+.faq_item {
+  margin-bottom: 30px;
+}
 .cp_item {
   text-align: center;
   border-radius: 2px;
