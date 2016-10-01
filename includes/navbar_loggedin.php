@@ -30,7 +30,7 @@
 				<li><a href="contact.php">Contact</a></li>
 
 			<?php if($_SESSION['rights'] == 3) { ?>
-				<li class="success">Admin Tools</li>
+				<li class="success"><a href="#">Admin Tools</a></li>
 			<?php }; ?>
 			</ul>
 		</div>

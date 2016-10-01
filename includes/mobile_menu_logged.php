@@ -39,10 +39,12 @@
 				</li>
 			</a>
 			<?php if($_SESSION['rights'] == 3) { ?>
-				<li class="success">
-					<i class="fa fa-lock" aria-hidden="true"></i>
-					Admin Tools
-				</li>
+				<a href="#">
+					<li class="success">
+						<i class="fa fa-lock" aria-hidden="true"></i>
+						Admin Tools
+					</li>
+				</a>
 			<?php } ?>
 		</ul>
 	</p>
