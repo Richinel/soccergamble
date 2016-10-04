@@ -1,11 +1,11 @@
 <?php
-error_reporting(0);
+//error_reporting(0);
 
 include('../SoccerGamble/includes/header.php');
 include('dbconnect.php');
 
 $username 	= $_POST['username'];
-$password 	= $_POST['password'];
+$password 	= md5($_POST['password']);
 $firstname 	= $_POST['firstname'];
 $lastname 	= $_POST['lastname'];
 $credits 	= $_POST['credits'];

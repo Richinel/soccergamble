@@ -1,5 +1,7 @@
-<?php $title = "Competities"; ?>
-<?php include('includes/header.php'); ?>
+<?php 	
+	$title = "Competities";
+ 	include('includes/header.php');
+ ?>
 
 	<div class="content">
 		<div class="wrapper">

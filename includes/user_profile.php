@@ -34,7 +34,7 @@
 				</p>
 
 				<div class="button primary outline">
-					Credits toevoegen
+					Wachtwoord veranderen
 				</div>
 			</div>
 		</div>
