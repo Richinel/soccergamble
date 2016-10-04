@@ -44,6 +44,21 @@ textarea {
   bottom: 30px;
   text-align: right;
 }
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
 .nav {
   position: absolute;
   left: 0;
@@ -212,36 +227,64 @@ textarea {
   margin-bottom: 10px;
 }
 .fp_competitions {
-  padding: 50px 0;
+  padding: 30px 0;
+}
+.fp_competitions .wrapper {
+  max-width: 1300px;
+  margin: auto;
 }
 .fp_competitions .wrapper h2 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px !important;
+  margin-bottom: 30px;
+  padding: 0;
 }
 .fp_competitions .wrapper .fpc {
-  min-height: 400px;
+  min-height: 100px;
   border-radius: 2px;
-  text-align: center;
-  padding: 15px;
-  margin: 20px;
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  background-color: #eaf0fb;
+  position: relative;
+  overflow: hidden;
+}
+.fp_competitions .wrapper .fpc .fpcimg {
+  display: block;
+  margin: auto;
+  opacity: 0.1;
+  max-height: 150px;
+  position: absolute;
+  right: 15px;
+  transform: rotate(10deg);
+  bottom: 25px;
+}
+.fp_competitions .wrapper .fpc p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.fp_competitions .wrapper .fpc .score {
+  position: absolute;
+  right: 15px;
+}
+.fp_competitions .wrapper .clubs {
+  text-align: left;
+}
+.fp_info {
   background-color: #f2f2f2;
   position: relative;
+  bottom: 30px;
 }
-.fp_competitions .wrapper .fpc table {
-  width: 100%;
-}
-.fp_competitions .wrapper .fpc table th {
-  background-color: #262626;
-  color: white;
+.fp_info .wrapper {
+  max-width: 1300px;
   margin: auto;
-  padding: 10px;
 }
-.fp_competitions .wrapper .fpc table td {
-  padding: 10px;
-}
-.fp_competitions .wrapper .fpc .fpc_img {
-  height: 90px;
-  margin-bottom: 15px;
+.fp_info .wrapper h2 {
+  text-align: center;
+  margin-bottom: 10px !important;
+  margin-bottom: 30px;
+  padding: 0;
 }
 .messagebox,
 .login,

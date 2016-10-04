@@ -13,7 +13,10 @@
 		
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 	<script src="assets/js/jquery-ui.js"></script>
+	<script src="assets/js/_app.js"></script>
+	<script src="assets/js/animation.js"></script>
 	<script src="assets/js/modal.js"></script>
+
 	<script src="assets/js/cycle2.js"></script>
 	<script src="assets/js/cycle2-tile.js"></script>
 	<script src="assets/js/visuals.js"></script>

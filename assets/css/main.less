@@ -60,6 +60,16 @@ textarea {
  	text-align: right;
  }
 
+ .noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
 
 .nav {
 	position: absolute;
@@ -262,43 +272,74 @@ textarea {
 }
 
 .fp_competitions {
-	padding: 50px 0;
+	padding: 30px 0;
 
 	.wrapper {
-
+		max-width: @max-width;
+		margin: auto;
 		h2 {
 			text-align: center;
-			margin-bottom: 40px;
+			margin-bottom: 10px !important;
+			margin-bottom: 30px;
+			padding: 0;
+			
 		}
 
 		.fpc {
-			min-height: 400px;
+			min-height: 100px;
 			border-radius: 2px;
-			text-align: center;
-			padding: 15px;
-			margin: 20px;
-			background-color: lighten(@darkGrey, 80%);
+			text-align: left;
+			padding: 10px;
+			margin: 10px;
+			width: auto;
+			background-color: lighten(@lightBlue, 20%);
 			position: relative;
+			overflow: hidden;
+			//margin-bottom: 50px;
 
-			table {
-				width: 100%;
-
-				th {
-					background-color: @darkGrey;
-					color: white;
-					margin: auto;
-					padding: 10px;
-				}
-
-				td {
-					padding: 10px;
-				}
+			.fpcimg {
+				display: block;
+				margin: auto;
+				opacity: 0.1;
+				max-height: 150px;
+				position: absolute;
+				right: 15px;
+				transform: rotate(10deg);
+				bottom: 25px;
 			}
 
-			.fpc_img {
-				height: 90px;
-				margin-bottom: 15px;
+			p {
+				font-size: 20px;
+				margin-top: 10px;
 			}
+
+			.score {
+				position: absolute;
+				right: 15px;
+			}
+		}
+
+		.clubs {
+			text-align: left;
+		}
+	}
+}
+
+.fp_info {
+	background-color: lighten(@darkGrey, 80%);
+	position: relative;
+	bottom: 30px;
+
+	.wrapper {
+		max-width: @max-width;
+		margin: auto;
+
+		h2 {
+			text-align: center;
+			margin-bottom: 10px !important;
+			margin-bottom: 30px;
+			padding: 0;
+			
 		}
 	}
 }

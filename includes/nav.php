@@ -16,18 +16,18 @@
 		<div class="wrapper">
 			<ul>
 				<li>
-					<a href="index.php">
+					<a href="index">
 						<i class="fa fa-home" aria-hidden="true"></i>
 					</a>
 				</li>
 				<li>
-					<a href="competitions.php">
+					<a href="competitions">
 						Competities
 					</a>
 				</li>
 				<li>Hoe werkt het?</li>
-				<li><a href="faqpage.php">FAQ</a></li>
-				<li><a href="contact.php">Contact</a></li>
+				<li><a href="faqpage">FAQ</a></li>
+				<li><a href="contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>

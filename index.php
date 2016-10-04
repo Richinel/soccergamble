@@ -4,6 +4,7 @@
 
 	<div class="content">
 		<?php include('includes/slider.php'); ?>
+		<?php include('includes/fp_info.php'); ?>
 		<?php include('includes/fp_competitions.php'); ?>
 	</div>
 	

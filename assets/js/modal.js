@@ -44,12 +44,12 @@
     		appendFields: false,
     		animation: {
         		open: {
-            		name: 'show',
+            		name: 'fadeIn',
             		timing: 'linear',
             		duration: 0.25
         		},
         		close: {
-            		name: 'hide',
+            		name: 'fadeOut',
             		timing: 'linear',
             		duration: 0.25
         		}

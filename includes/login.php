@@ -15,7 +15,7 @@
 
 					<input type='submit' value='Inloggen' class="btn_blue"><br>
 					<small class="subtext">
-						<a href="./forgot_pass.php">
+						<a href="./forgot_pass">
 							Wachtwoord vergeten?
 						</a>
 					</small>

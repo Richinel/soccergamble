@@ -10,13 +10,13 @@
 	<hr>
 	<p>
 		<ul>
-			<a href="index.php">
+			<a href="index">
 				<li>
 					<i class="fa fa-home" aria-hidden="true"></i>
 					Home
 				</li>
 			</a>
-			<a href="competitions.php">
+			<a href="competitions">
 				<li>
 					<i class="fa fa-trophy" aria-hidden="true"></i>
 					Competities
@@ -26,13 +26,13 @@
 				<i class="fa fa-info-circle" aria-hidden="true"></i>
 				Hoe werkt het?
 			</li>
-			<a href="faqpage.php">
+			<a href="faqpage">
 				<li>
 					<i class="fa fa-question-circle" aria-hidden="true"></i>
 					FAQ
 				</li>
 			</a>
-			<a href="contact.php">
+			<a href="contact">
 				<li>
 					<i class="fa fa-phone-square" aria-hidden="true"></i>
 					Contact
