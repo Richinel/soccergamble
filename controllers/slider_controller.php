@@ -8,7 +8,7 @@
 		while ($row = $result->fetch_assoc()) {
 			echo "<div class='slider' style='background-image: url(".$row['backgroundimg']."); background-repeat: no-repeat; background-size: cover;'>
 					<div class='s_content'>
-						<h3>".$row['title']."</h3>
+						<h2>".$row['title']."</h2>
 						<hr>
 						<p>".$row['subtitle']."</p>
 					</div>

@@ -59,6 +59,13 @@ textarea {
   /* Non-prefixed version, currently
                                   not supported by any browser */
 }
+.football {
+  position: absolute;
+  font-size: 250px !important;
+  opacity: 0.2;
+  right: 350px;
+  top: 40px;
+}
 .nav {
   position: absolute;
   left: 0;
@@ -196,6 +203,14 @@ textarea {
 }
 .wrapper .fp_info h1 {
   color: #262626;
+}
+.wrapper_medium {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+}
+.wrapper_medium h2 {
+  text-align: center;
 }
 .slider {
   background-repeat: no-repeat;
@@ -648,7 +663,7 @@ footer .wrapper table td a:hover {
     display: none;
   }
   .slider .s_content {
-    padding-top: 100px;
+    padding-top: 40px;
   }
   .login .login_box,
   .register .login_box,
