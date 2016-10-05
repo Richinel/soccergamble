@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Machine: 127.0.0.1
--- Gegenereerd op: 01 okt 2016 om 22:58
+-- Gegenereerd op: 05 okt 2016 om 10:19
 -- Serverversie: 5.6.17
 -- PHP-versie: 5.5.12
 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `faq` (
   `question` text NOT NULL,
   `answer` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `faq`
@@ -47,7 +47,7 @@ INSERT INTO `faq` (`id`, `question`, `answer`) VALUES
 (18, 'Hoe lang duurt het voordat mijn credits op mijn account staat als ik online heb gewonnen?', 'Zodra u een wedstrijd/weddenschap heeft gewonnen worden de credits er gelijk aan het eind van de desbetreffende website bijgeschreven.'),
 (19, 'Hoeveel zijn credits waard?', '1 credit = €1,-'),
 (21, ' Onlangs heb ik geld overgemaakt van mijn account naar mijn rekening. Wanneer ontvang ik mijn geld?', 'De overboeking kan tot 10 werkdagen duren. Wij streven er naar om het bedrag eerder aan je uit te keren.'),
-(22, 'Test vraag', 'Test antwoord');
+(23, 'Vraag?', 'Antwoord!');
 
 -- --------------------------------------------------------
 
@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `slider` (
   `subtitle` text NOT NULL,
   `backgroundimg` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `slider`
@@ -102,68 +102,29 @@ INSERT INTO `slider` (`id`, `title`, `subtitle`, `backgroundimg`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `wedstrijden_ed`
+-- Tabelstructuur voor tabel `wedstrijden`
 --
 
-CREATE TABLE IF NOT EXISTS `wedstrijden_ed` (
+CREATE TABLE IF NOT EXISTS `wedstrijden` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `thuisploeg` varchar(100) NOT NULL,
+  `thuis_score` int(11) NOT NULL,
   `uitploeg` varchar(100) NOT NULL,
-  `stand` varchar(50) NOT NULL,
+  `uit_score` int(11) NOT NULL,
+  `division` varchar(255) NOT NULL,
+  `division_logo` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
--- Gegevens worden geëxporteerd voor tabel `wedstrijden_ed`
+-- Gegevens worden geëxporteerd voor tabel `wedstrijden`
 --
 
-INSERT INTO `wedstrijden_ed` (`id`, `thuisploeg`, `uitploeg`, `stand`) VALUES
-(1, 'ADO Den Haag', 'Heracles Almelo', '2 - 2'),
-(2, 'Sparta Rotterdam', 'Excelsior', '0 - 4');
-
--- --------------------------------------------------------
-
---
--- Tabelstructuur voor tabel `wedstrijden_ucl`
---
-
-CREATE TABLE IF NOT EXISTS `wedstrijden_ucl` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `thuisploeg` varchar(100) NOT NULL,
-  `uitploeg` varchar(100) NOT NULL,
-  `stand` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
---
--- Gegevens worden geëxporteerd voor tabel `wedstrijden_ucl`
---
-
-INSERT INTO `wedstrijden_ucl` (`id`, `thuisploeg`, `uitploeg`, `stand`) VALUES
-(1, 'Manchester CIty', 'Club Brugge', '2 - 1'),
-(2, 'Feyenoord', 'PSV', '4 - 0');
-
--- --------------------------------------------------------
-
---
--- Tabelstructuur voor tabel `wedstrijden_uel`
---
-
-CREATE TABLE IF NOT EXISTS `wedstrijden_uel` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `thuisploeg` varchar(100) NOT NULL,
-  `uitploeg` varchar(100) NOT NULL,
-  `stand` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
---
--- Gegevens worden geëxporteerd voor tabel `wedstrijden_uel`
---
-
-INSERT INTO `wedstrijden_uel` (`id`, `thuisploeg`, `uitploeg`, `stand`) VALUES
-(1, 'Manchester United', 'Zohrya', '2 - 1'),
-(2, 'FenerBahce', 'Feyenoord', '3 - 0');
+INSERT INTO `wedstrijden` (`id`, `thuisploeg`, `thuis_score`, `uitploeg`, `uit_score`, `division`, `division_logo`) VALUES
+(1, 'Manchester City', 4, 'Club Brugge', 0, 'Champions League', 'ucl.png'),
+(3, 'Feyenoord', 1, 'Manchester United', 0, 'Europa League', 'uel.png'),
+(4, 'Vitesse', 2, 'Roda JC', 3, 'Eredivisie', 'eredivisie.png'),
+(5, 'VVV Venlo', 1, 'NAC Breda', 1, 'Jupiler League', 'jupiler.png');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
