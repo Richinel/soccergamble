@@ -1,5 +1,6 @@
 body {
-  background-color: white;
+  background-image: url('assets/images/pattern19.png');
+  background-repeat: repeat;
   font-family: 'Titillium Web', sans-serif !important;
 }
 h1,
@@ -37,6 +38,10 @@ a:hover {
 textarea {
   max-width: 100%;
   overflow-x: hidden;
+}
+.fieldset_800 {
+  max-width: 800px;
+  margin: auto;
 }
 .admin_ul {
   float: right;
@@ -214,7 +219,7 @@ textarea {
 }
 .slider {
   background-repeat: no-repeat;
-  min-height: 400px;
+  min-height: 500px;
   height: auto;
   position: relative;
 }
@@ -222,7 +227,7 @@ textarea {
   color: white !important;
   margin: auto;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 200px;
   max-width: 800px;
   width: 90%;
 }
@@ -246,7 +251,7 @@ textarea {
   padding: 10px;
 }
 .comp_choice .wrapper .cc_unit img {
-  max-height: 150px;
+  max-height: 100px;
   display: block;
   margin: auto;
 }
@@ -255,7 +260,7 @@ textarea {
   background-color: #eaf0fb;
 }
 .fp_competitions {
-  padding: 30px 0;
+  padding: 10px 0;
 }
 .fp_competitions .wrapper {
   max-width: 1300px;
