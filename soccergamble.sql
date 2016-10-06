@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 4.5.1
 -- http://www.phpmyadmin.net
 --
--- Machine: 127.0.0.1
--- Gegenereerd op: 05 okt 2016 om 10:19
--- Serverversie: 5.6.17
--- PHP-versie: 5.5.12
+-- Host: 127.0.0.1
+-- Gegenereerd op: 06 okt 2016 om 16:14
+-- Serverversie: 10.1.16-MariaDB
+-- PHP-versie: 7.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,10 +14,10 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Databank: `soccergamble`
+-- Database: `soccergamble`
 --
 
 -- --------------------------------------------------------
@@ -26,12 +26,11 @@ SET time_zone = "+00:00";
 -- Tabelstructuur voor tabel `faq`
 --
 
-CREATE TABLE IF NOT EXISTS `faq` (
-  `id` int(100) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `faq` (
+  `id` int(100) NOT NULL,
   `question` text NOT NULL,
-  `answer` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
+  `answer` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `faq`
@@ -47,7 +46,31 @@ INSERT INTO `faq` (`id`, `question`, `answer`) VALUES
 (18, 'Hoe lang duurt het voordat mijn credits op mijn account staat als ik online heb gewonnen?', 'Zodra u een wedstrijd/weddenschap heeft gewonnen worden de credits er gelijk aan het eind van de desbetreffende website bijgeschreven.'),
 (19, 'Hoeveel zijn credits waard?', '1 credit = €1,-'),
 (21, ' Onlangs heb ik geld overgemaakt van mijn account naar mijn rekening. Wanneer ontvang ik mijn geld?', 'De overboeking kan tot 10 werkdagen duren. Wij streven er naar om het bedrag eerder aan je uit te keren.'),
-(23, 'Vraag?', 'Antwoord!');
+(23, 'Vraag?', 'Antwoord!'),
+(24, 'test', 'jibberishhh'),
+(25, 'sdfsadfsdfs', 'sdfdsfdsfdsfsdf');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `fp_competitions`
+--
+
+CREATE TABLE `fp_competitions` (
+  `id` int(100) NOT NULL,
+  `division` varchar(255) NOT NULL,
+  `division_logo` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `fp_competitions`
+--
+
+INSERT INTO `fp_competitions` (`id`, `division`, `division_logo`) VALUES
+(1, 'Champions League', 'ucl.png'),
+(2, 'Europa League', 'uel.png'),
+(3, 'Eredivisie', 'eredivisie3.png'),
+(4, 'Jupiler League', 'jupiler.png');
 
 -- --------------------------------------------------------
 
@@ -55,17 +78,16 @@ INSERT INTO `faq` (`id`, `question`, `answer`) VALUES
 -- Tabelstructuur voor tabel `gebruiker`
 --
 
-CREATE TABLE IF NOT EXISTS `gebruiker` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `gebruiker` (
+  `id` int(11) NOT NULL,
   `username` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `firstname` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `lastname` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `credits` int(11) NOT NULL,
-  `rights` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
+  `rights` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `gebruiker`
@@ -82,13 +104,12 @@ INSERT INTO `gebruiker` (`id`, `username`, `firstname`, `lastname`, `password`, 
 -- Tabelstructuur voor tabel `slider`
 --
 
-CREATE TABLE IF NOT EXISTS `slider` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `slider` (
+  `id` int(11) NOT NULL,
   `title` text NOT NULL,
   `subtitle` text NOT NULL,
-  `backgroundimg` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+  `backgroundimg` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `slider`
@@ -105,16 +126,15 @@ INSERT INTO `slider` (`id`, `title`, `subtitle`, `backgroundimg`) VALUES
 -- Tabelstructuur voor tabel `wedstrijden`
 --
 
-CREATE TABLE IF NOT EXISTS `wedstrijden` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `wedstrijden` (
+  `id` int(11) NOT NULL,
   `thuisploeg` varchar(100) NOT NULL,
   `thuis_score` int(11) NOT NULL,
   `uitploeg` varchar(100) NOT NULL,
   `uit_score` int(11) NOT NULL,
   `division` varchar(255) NOT NULL,
-  `division_logo` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+  `division_logo` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `wedstrijden`
@@ -126,6 +146,69 @@ INSERT INTO `wedstrijden` (`id`, `thuisploeg`, `thuis_score`, `uitploeg`, `uit_s
 (4, 'Vitesse', 2, 'Roda JC', 3, 'Eredivisie', 'eredivisie.png'),
 (5, 'VVV Venlo', 1, 'NAC Breda', 1, 'Jupiler League', 'jupiler.png');
 
+--
+-- Indexen voor geëxporteerde tabellen
+--
+
+--
+-- Indexen voor tabel `faq`
+--
+ALTER TABLE `faq`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexen voor tabel `fp_competitions`
+--
+ALTER TABLE `fp_competitions`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexen voor tabel `gebruiker`
+--
+ALTER TABLE `gebruiker`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexen voor tabel `slider`
+--
+ALTER TABLE `slider`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexen voor tabel `wedstrijden`
+--
+ALTER TABLE `wedstrijden`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT voor geëxporteerde tabellen
+--
+
+--
+-- AUTO_INCREMENT voor een tabel `faq`
+--
+ALTER TABLE `faq`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+--
+-- AUTO_INCREMENT voor een tabel `fp_competitions`
+--
+ALTER TABLE `fp_competitions`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT voor een tabel `gebruiker`
+--
+ALTER TABLE `gebruiker`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT voor een tabel `slider`
+--
+ALTER TABLE `slider`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT voor een tabel `wedstrijden`
+--
+ALTER TABLE `wedstrijden`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
