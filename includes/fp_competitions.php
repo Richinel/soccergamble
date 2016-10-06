@@ -2,7 +2,7 @@
 	<div class="wrapper">
 		<h2>Recente wedstrijden</h2>	
 		<hr>
-		<div class="row blocks around">	
+		<div class="row centered blocks">	
 			<?php include('./controllers/ucl_match.php'); ?>
 		</div>
 	</div>

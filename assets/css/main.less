@@ -288,6 +288,28 @@ textarea {
 	}
 }
 
+.comp_choice {
+
+	.wrapper {
+
+		.cc_unit {
+			border: 1px solid rgba(0, 0, 0, 0.0);
+			padding: 10px;
+
+			img {
+				max-height: 150px;
+				display: block;
+				margin: auto;
+			}
+
+			&:hover {
+				border: 1px solid @lightBlue;
+				background-color: lighten(@lightBlue, 20%);
+			}
+		}
+	}
+}
+
 .fp_competitions {
 	padding: 30px 0;
 
@@ -309,7 +331,6 @@ textarea {
 			text-align: left;
 			padding: 10px;
 			margin: 10px;
-			width: auto;
 			background-color: lighten(@lightBlue, 20%);
 			position: relative;
 			overflow: hidden;

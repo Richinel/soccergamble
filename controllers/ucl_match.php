@@ -8,7 +8,7 @@
          // output data of each row
          while($row = $result->fetch_assoc()) {
               echo "    
-            <div class='col col-4 fpc'>
+            <div class='col-4 fpc'>
                 <img class='fpcimg noselect' src='assets/images/".$row['division_logo']."'>
                 <p>
                     <strong>" .$row['thuisploeg']. "</strong>
