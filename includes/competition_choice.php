@@ -1,8 +1,7 @@
 <div class="comp_choice">
 	<div class="wrapper">
-		<center><h3>Hoe werkt het?</h3></center>
 		<fieldset class="fieldset_800">
-		<legend>1. Kies een competitie</legend>	
+			<center><h3>Beschikbare competities</h3></center>
 			<div class="row centered">
 				<?php include('./controllers/fp_comp_controller.php'); ?>
 			</div>

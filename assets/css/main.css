@@ -1,5 +1,5 @@
 body {
-  background-image: url('assets/images/pattern19.png');
+  background-image: url('../images/pattern19.png');
   background-repeat: repeat;
   font-family: 'Titillium Web', sans-serif !important;
 }
@@ -42,6 +42,8 @@ textarea {
 .fieldset_800 {
   max-width: 800px;
   margin: auto;
+  background-color: white;
+  box-shadow: 0 0 15px #888888;
 }
 .admin_ul {
   float: right;
@@ -246,9 +248,14 @@ textarea {
   color: white;
   margin-bottom: 10px;
 }
+.comp_choice {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
 .comp_choice .wrapper .cc_unit {
   border: 1px solid rgba(0, 0, 0, 0);
   padding: 10px;
+  transition: 75ms ease-in;
 }
 .comp_choice .wrapper .cc_unit img {
   max-height: 100px;
@@ -258,29 +265,32 @@ textarea {
 .comp_choice .wrapper .cc_unit:hover {
   border: 1px solid #95b2ea;
   background-color: #eaf0fb;
+  -webkit-filter: grayscale(0%) !important;
+  /* Chrome, Safari, Opera */
+  filter: grayscale(0%);
 }
 .fp_competitions {
   padding: 10px 0;
+  background-image: url('../images/BG.jpg');
 }
 .fp_competitions .wrapper {
   max-width: 1300px;
   margin: auto;
 }
-.fp_competitions .wrapper h2 {
-  text-align: center;
-  margin-bottom: 10px !important;
-  margin-bottom: 30px;
-  padding: 0;
+.fp_competitions .wrapper h3 {
+  color: white !important;
 }
 .fp_competitions .wrapper .fpc {
   min-height: 100px;
-  border-radius: 2px;
+  border-radius: 1px;
+  border: 1px solid white !important;
   text-align: left;
   padding: 10px;
   margin: 10px;
-  background-color: #eaf0fb;
+  background-color: transparent;
   position: relative;
   overflow: hidden;
+  color: white !important;
 }
 .fp_competitions .wrapper .fpc .fpcimg {
   display: block;

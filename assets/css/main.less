@@ -6,7 +6,7 @@
 @max-width: 1300px;
 
 body {
-	background-image: url('assets/images/pattern19.png');
+	background-image: url('../images/pattern19.png');
 	background-repeat: repeat;
 	font-family: 'Titillium Web', sans-serif !important;
 }
@@ -57,6 +57,8 @@ textarea {
  .fieldset_800 {
  	max-width: 800px;
  	margin: auto;
+ 	background-color: white;
+ 	box-shadow: 0 0 15px #888888;
  }
 
  .admin_ul {
@@ -295,12 +297,15 @@ textarea {
 }
 
 .comp_choice {
+	padding-top: 20px;
+	padding-bottom: 50px;
 
 	.wrapper {
 
 		.cc_unit {
 			border: 1px solid rgba(0, 0, 0, 0.0);
 			padding: 10px;
+			transition: 75ms ease-in;
 
 			img {
 				max-height: 100px;
@@ -311,6 +316,8 @@ textarea {
 			&:hover {
 				border: 1px solid @lightBlue;
 				background-color: lighten(@lightBlue, 20%);
+				-webkit-filter: grayscale(0%) !important; /* Chrome, Safari, Opera */
+	   			filter: grayscale(0%);
 			}
 		}
 	}
@@ -318,28 +325,27 @@ textarea {
 
 .fp_competitions {
 	padding: 10px 0;
+	background-image: url('../images/BG.jpg');
 
 	.wrapper {
 		max-width: @max-width;
 		margin: auto;
 
-		h2 {
-			text-align: center;
-			margin-bottom: 10px !important;
-			margin-bottom: 30px;
-			padding: 0;
-			
+		h3 {
+			color: white !important;
 		}
 
 		.fpc {
 			min-height: 100px;
-			border-radius: 2px;
+			border-radius: 1px;
+			border: 1px solid white !important;
 			text-align: left;
 			padding: 10px;
 			margin: 10px;
-			background-color: lighten(@lightBlue, 20%);
+			background-color: transparent;
 			position: relative;
 			overflow: hidden;
+			color: white !important;
 			//margin-bottom: 50px;
 
 			.fpcimg {
@@ -383,8 +389,7 @@ textarea {
 			text-align: center;
 			margin-bottom: 10px !important;
 			margin-bottom: 30px;
-			padding: 0;
-			
+			padding: 0;			
 		}
 	}
 }
