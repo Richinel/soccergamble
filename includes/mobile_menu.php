@@ -9,7 +9,7 @@
 		<a href="competitions">
 			<li>
 				<i class="fa fa-trophy" aria-hidden="true"></i>
-				Competities
+				Wedstrijden
 			</li>
 		</a>
 		<li>

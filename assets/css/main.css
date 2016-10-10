@@ -1,5 +1,4 @@
 body {
-  background-image: url('../images/pattern19.png');
   background-repeat: repeat;
   font-family: 'Titillium Web', sans-serif !important;
 }
@@ -595,7 +594,7 @@ textarea {
 }
 .cp_item:hover {
   border: 1px solid #95b2ea;
-  background-color: #f7f9fd;
+  background-color: transparent;
 }
 .fs1 {
   margin-top: 40px;
@@ -603,6 +602,8 @@ textarea {
 .contact_form input {
   max-width: 400px;
   width: 100%;
+  background-color: white;
+  opacity: 0.5;
 }
 .contact_form textarea {
   max-width: 400px;
@@ -613,6 +614,21 @@ textarea {
 }
 .capitalize {
   text-transform: capitalize;
+}
+.partners {
+  text-align: center;
+}
+.partners .col {
+  border: 1px solid transparent;
+  transition: 75ms ease-in;
+}
+.partners .col:hover {
+  border: 1px solid #95b2ea;
+  background-color: #eaf0fb;
+}
+.partners .col img {
+  max-height: 100px;
+  padding: 20px 0;
 }
 input {
   border-color: #95b2ea !important;

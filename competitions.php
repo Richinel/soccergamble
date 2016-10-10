@@ -5,7 +5,7 @@
 
 	<div class="content">
 		<div class="wrapper">
-			<h3>Competities</h3>
+			<h3>Wedstrijden</h3>
 			<hr>
 			
 			<p>

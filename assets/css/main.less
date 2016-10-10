@@ -6,7 +6,6 @@
 @max-width: 1300px;
 
 body {
-	background-image: url('../images/pattern19.png');
 	background-repeat: repeat;
 	font-family: 'Titillium Web', sans-serif !important;
 }
@@ -517,7 +516,7 @@ textarea {
 
 	&:hover {
 		border: 1px solid @lightBlue;
-		background-color: lighten(@lightBlue, 23%)
+		background-color: transparent;
 	}
 }
 
@@ -529,6 +528,8 @@ textarea {
 	input {
 		max-width: 400px;
 		width: 100%;
+		background-color: white;
+		opacity: 0.5;
 	}
 
 	textarea {
@@ -543,6 +544,25 @@ textarea {
 
 .capitalize {
 	text-transform: capitalize;
+}
+
+.partners {
+	text-align: center;
+
+	.col {
+		border: 1px solid transparent;
+		transition: 75ms ease-in;
+
+		&:hover {
+			border: 1px solid @lightBlue;
+			background-color: lighten(@lightBlue, 20%);
+		}
+
+		img {
+			max-height: 100px;
+			padding: 20px 0;
+		}
+	}
 }
 
 //FORM

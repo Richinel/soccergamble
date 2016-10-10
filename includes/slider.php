@@ -1,5 +1,5 @@
 <div class="cycle-slideshow" 
-    data-cycle-fx="tileBlind"
+    data-cycle-fx="fade"
     data-cycle-tile-vertical=false
     data-cycle-timeout="6000"
     data-cycle-swipe="true"

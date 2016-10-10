@@ -22,7 +22,7 @@
 				</li>
 				<li>
 					<a href="competitions">
-						Competities
+						Wedstrijden
 					</a>
 				</li>
 				<li>Hoe werkt het?</li>
