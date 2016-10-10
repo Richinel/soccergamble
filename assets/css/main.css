@@ -622,10 +622,6 @@ textarea {
   border: 1px solid transparent;
   transition: 75ms ease-in;
 }
-.partners .col:hover {
-  border: 1px solid #95b2ea;
-  background-color: #eaf0fb;
-}
 .partners .col img {
   max-height: 100px;
   padding: 20px 0;
