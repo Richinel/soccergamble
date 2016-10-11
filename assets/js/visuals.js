@@ -35,11 +35,16 @@ var main = function() {
         $('.profile').fadeToggle(150);
     });
 
+    $('.search, .search_btn').click(function() {
+        $('.search_modal').fadeToggle(150);
+    });
+
     $('.close').click(function() {
     	$('.login').fadeOut(150);
         $('.register').fadeOut(150);
         $('.profile').fadeOut(150);
         $('.messagebox').fadeOut(150);
+        $('.search_modal').fadeOut(150);
     });
 
     $('.close_btn').click(function() {

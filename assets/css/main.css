@@ -104,11 +104,11 @@ textarea {
   margin-left: 20px;
   transition: 25ms ease-in;
 }
-.nav i {
+.nav .mnu_btn {
   position: absolute;
-  top: 25px;
+  top: 20px;
   right: 10px;
-  font-size: 20px;
+  font-size: 30px;
   display: none;
   cursor: pointer;
 }
@@ -330,7 +330,8 @@ textarea {
 .messagebox,
 .login,
 .register,
-.profile {
+.profile,
+.search_modal {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.85);
   top: 0;
@@ -347,25 +348,30 @@ textarea {
 .messagebox .profile_box,
 .login .profile_box,
 .register .profile_box,
-.profile .profile_box {
+.profile .profile_box,
+.search_modal .profile_box {
   max-width: 800px !important;
 }
 .messagebox .messagebox_body,
 .login .messagebox_body,
 .register .messagebox_body,
 .profile .messagebox_body,
+.search_modal .messagebox_body,
 .messagebox .login_box,
 .login .login_box,
 .register .login_box,
 .profile .login_box,
+.search_modal .login_box,
 .messagebox .register_box,
 .login .register_box,
 .register .register_box,
 .profile .register_box,
+.search_modal .register_box,
 .messagebox .profile_box,
 .login .profile_box,
 .register .profile_box,
-.profile .profile_box {
+.profile .profile_box,
+.search_modal .profile_box {
   background-color: white;
   border-radius: 2px;
   box-shadow: 0 0 10px #cccccc;
@@ -381,18 +387,22 @@ textarea {
 .login .messagebox_body .close,
 .register .messagebox_body .close,
 .profile .messagebox_body .close,
+.search_modal .messagebox_body .close,
 .messagebox .login_box .close,
 .login .login_box .close,
 .register .login_box .close,
 .profile .login_box .close,
+.search_modal .login_box .close,
 .messagebox .register_box .close,
 .login .register_box .close,
 .register .register_box .close,
 .profile .register_box .close,
+.search_modal .register_box .close,
 .messagebox .profile_box .close,
 .login .profile_box .close,
 .register .profile_box .close,
-.profile .profile_box .close {
+.profile .profile_box .close,
+.search_modal .profile_box .close {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -401,90 +411,110 @@ textarea {
 .login .messagebox_body h4,
 .register .messagebox_body h4,
 .profile .messagebox_body h4,
+.search_modal .messagebox_body h4,
 .messagebox .login_box h4,
 .login .login_box h4,
 .register .login_box h4,
 .profile .login_box h4,
+.search_modal .login_box h4,
 .messagebox .register_box h4,
 .login .register_box h4,
 .register .register_box h4,
 .profile .register_box h4,
+.search_modal .register_box h4,
 .messagebox .profile_box h4,
 .login .profile_box h4,
 .register .profile_box h4,
-.profile .profile_box h4 {
+.profile .profile_box h4,
+.search_modal .profile_box h4 {
   text-align: center;
 }
 .messagebox .messagebox_body form,
 .login .messagebox_body form,
 .register .messagebox_body form,
 .profile .messagebox_body form,
+.search_modal .messagebox_body form,
 .messagebox .login_box form,
 .login .login_box form,
 .register .login_box form,
 .profile .login_box form,
+.search_modal .login_box form,
 .messagebox .register_box form,
 .login .register_box form,
 .register .register_box form,
 .profile .register_box form,
+.search_modal .register_box form,
 .messagebox .profile_box form,
 .login .profile_box form,
 .register .profile_box form,
-.profile .profile_box form {
+.profile .profile_box form,
+.search_modal .profile_box form {
   text-align: left;
 }
 .messagebox .messagebox_body form input,
 .login .messagebox_body form input,
 .register .messagebox_body form input,
 .profile .messagebox_body form input,
+.search_modal .messagebox_body form input,
 .messagebox .login_box form input,
 .login .login_box form input,
 .register .login_box form input,
 .profile .login_box form input,
+.search_modal .login_box form input,
 .messagebox .register_box form input,
 .login .register_box form input,
 .register .register_box form input,
 .profile .register_box form input,
+.search_modal .register_box form input,
 .messagebox .profile_box form input,
 .login .profile_box form input,
 .register .profile_box form input,
-.profile .profile_box form input {
+.profile .profile_box form input,
+.search_modal .profile_box form input {
   width: 100%;
 }
 .messagebox .messagebox_body form .login_btn,
 .login .messagebox_body form .login_btn,
 .register .messagebox_body form .login_btn,
 .profile .messagebox_body form .login_btn,
+.search_modal .messagebox_body form .login_btn,
 .messagebox .login_box form .login_btn,
 .login .login_box form .login_btn,
 .register .login_box form .login_btn,
 .profile .login_box form .login_btn,
+.search_modal .login_box form .login_btn,
 .messagebox .register_box form .login_btn,
 .login .register_box form .login_btn,
 .register .register_box form .login_btn,
 .profile .register_box form .login_btn,
+.search_modal .register_box form .login_btn,
 .messagebox .profile_box form .login_btn,
 .login .profile_box form .login_btn,
 .register .profile_box form .login_btn,
-.profile .profile_box form .login_btn {
+.profile .profile_box form .login_btn,
+.search_modal .profile_box form .login_btn {
   width: auto;
 }
 .messagebox .messagebox_body .decision,
 .login .messagebox_body .decision,
 .register .messagebox_body .decision,
 .profile .messagebox_body .decision,
+.search_modal .messagebox_body .decision,
 .messagebox .login_box .decision,
 .login .login_box .decision,
 .register .login_box .decision,
 .profile .login_box .decision,
+.search_modal .login_box .decision,
 .messagebox .register_box .decision,
 .login .register_box .decision,
 .register .register_box .decision,
 .profile .register_box .decision,
+.search_modal .register_box .decision,
 .messagebox .profile_box .decision,
 .login .profile_box .decision,
 .register .profile_box .decision,
-.profile .profile_box .decision {
+.profile .profile_box .decision,
+.search_modal .profile_box .decision {
   margin-top: 65px;
   text-align: center;
 }
@@ -492,18 +522,22 @@ textarea {
 .login .messagebox_body .profile_pic,
 .register .messagebox_body .profile_pic,
 .profile .messagebox_body .profile_pic,
+.search_modal .messagebox_body .profile_pic,
 .messagebox .login_box .profile_pic,
 .login .login_box .profile_pic,
 .register .login_box .profile_pic,
 .profile .login_box .profile_pic,
+.search_modal .login_box .profile_pic,
 .messagebox .register_box .profile_pic,
 .login .register_box .profile_pic,
 .register .register_box .profile_pic,
 .profile .register_box .profile_pic,
+.search_modal .register_box .profile_pic,
 .messagebox .profile_box .profile_pic,
 .login .profile_box .profile_pic,
 .register .profile_box .profile_pic,
-.profile .profile_box .profile_pic {
+.profile .profile_box .profile_pic,
+.search_modal .profile_box .profile_pic {
   font-size: 160px;
   text-align: center !important;
   display: block;
@@ -515,18 +549,22 @@ textarea {
 .login .messagebox_body .user_fullname,
 .register .messagebox_body .user_fullname,
 .profile .messagebox_body .user_fullname,
+.search_modal .messagebox_body .user_fullname,
 .messagebox .login_box .user_fullname,
 .login .login_box .user_fullname,
 .register .login_box .user_fullname,
 .profile .login_box .user_fullname,
+.search_modal .login_box .user_fullname,
 .messagebox .register_box .user_fullname,
 .login .register_box .user_fullname,
 .register .register_box .user_fullname,
 .profile .register_box .user_fullname,
+.search_modal .register_box .user_fullname,
 .messagebox .profile_box .user_fullname,
 .login .profile_box .user_fullname,
 .register .profile_box .user_fullname,
-.profile .profile_box .user_fullname {
+.profile .profile_box .user_fullname,
+.search_modal .profile_box .user_fullname {
   text-align: left;
   color: black !important;
   font-weight: bold !important;
@@ -535,43 +573,51 @@ textarea {
 .login .messagebox_body .lighter,
 .register .messagebox_body .lighter,
 .profile .messagebox_body .lighter,
+.search_modal .messagebox_body .lighter,
 .messagebox .login_box .lighter,
 .login .login_box .lighter,
 .register .login_box .lighter,
 .profile .login_box .lighter,
+.search_modal .login_box .lighter,
 .messagebox .register_box .lighter,
 .login .register_box .lighter,
 .register .register_box .lighter,
 .profile .register_box .lighter,
+.search_modal .register_box .lighter,
 .messagebox .profile_box .lighter,
 .login .profile_box .lighter,
 .register .profile_box .lighter,
-.profile .profile_box .lighter {
+.profile .profile_box .lighter,
+.search_modal .profile_box .lighter {
   color: #95b2ea;
 }
 .messagebox .social_login,
 .login .social_login,
 .register .social_login,
-.profile .social_login {
+.profile .social_login,
+.search_modal .social_login {
   margin: auto;
   text-align: center;
 }
 .messagebox .social_login button,
 .login .social_login button,
 .register .social_login button,
-.profile .social_login button {
+.profile .social_login button,
+.search_modal .social_login button {
   width: 100%;
 }
 .messagebox .social_login .fb,
 .login .social_login .fb,
 .register .social_login .fb,
-.profile .social_login .fb {
+.profile .social_login .fb,
+.search_modal .social_login .fb {
   color: #95b2ea;
 }
 .messagebox .social_login .gp,
 .login .social_login .gp,
 .register .social_login .gp,
-.profile .social_login .gp {
+.profile .social_login .gp,
+.search_modal .social_login .gp {
   color: #f34248;
 }
 .faq_item {
@@ -627,8 +673,22 @@ textarea {
   padding: 20px 0;
   opacity: 0.7;
 }
+.search {
+  cursor: pointer;
+}
+.search_btn {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 30px !important;
+  display: none !important;
+  cursor: pointer;
+}
 input {
   border-color: #95b2ea !important;
+}
+.form-item i {
+  margin-top: 13px;
 }
 footer {
   background-color: #404040;
@@ -714,8 +774,9 @@ footer .wrapper table td a:hover {
   .nav .wrapper .nav_btns {
     display: none;
   }
-  .nav i {
-    display: block;
+  .nav .mnu_btn,
+  .nav .search_btn {
+    display: block !important;
   }
   .sub_nav {
     display: none;

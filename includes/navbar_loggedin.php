@@ -29,11 +29,14 @@
 				<li><a href="faqpage">FAQ</a></li>
 				<li><a href="contact">Contact</a></li>
 
-			<?php if($_SESSION['rights'] == 3) { ?>
-				<li class="success"><a href="#">Admin Tools</a></li>
-			<?php }; ?>
+				<?php if($_SESSION['rights'] == 3) { ?>
+					<li class="success"><a href="#">Admin Tools</a></li>
+				<?php }; ?>
+
+				<li><i class="fa fa-search search" aria-hidden="true"></i></li>
 			</ul>
 		</div>
 	</div>
 
 	<?php include('includes/mobile_menu_logged.php'); ?>
+	<?php include('includes/search_modal.php'); ?>
