@@ -11,9 +11,15 @@
 			</p>
 			<p>
 				Wat kan er gebeurd zijn en wat nu verder?
-				De link waarop u geklikt heeft, bevat mogelijk een fout;
-				De pagina kan verwijderd zijn of een andere naam hebben gekregen; 
-				of, maar dat is natuurlijk zeer onwaarschijnlijk, heeft u wellicht een typfout gemaakt?
+				<ul>
+					<li>De link waarop u geklikt heeft, bevat mogelijk een fout;</li>
+					<li>De pagina kan verwijderd zijn of een andere naam hebben gekregen;</li>
+					<li>Of, maar dat is natuurlijk zeer onwaarschijnlijk, heeft u wellicht een typfout gemaakt?</li>
+				</ul>
+			</p>
+
+			<p>
+				<a href="index">Klik hier om terug te keren naar de homepage.</a>
 			</p>
 		</div>
 	</div>

@@ -625,6 +625,7 @@ textarea {
 .partners .col img {
   max-height: 100px;
   padding: 20px 0;
+  opacity: 0.7;
 }
 input {
   border-color: #95b2ea !important;
@@ -677,6 +678,24 @@ footer .wrapper table td a {
 }
 footer .wrapper table td a:hover {
   text-decoration: underline;
+}
+.hr {
+  margin-top: 20px;
+}
+.top3 {
+  text-align: center;
+}
+.top3 .col {
+  background-color: #e6e6e6;
+  margin: 10px;
+  padding: 20px;
+}
+.top3 .col img {
+  max-height: 75px;
+  margin-bottom: 20px;
+}
+.top3 .col table {
+  text-align: left;
 }
 @media screen and (max-width: 768px) {
   .content {

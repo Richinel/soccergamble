@@ -40,7 +40,22 @@
 							</tr>
 						</table>
 					</div>
-				</div>		
+				</div>	
+				<hr class="hr">
+				<div class="row centered partners">
+					<div class="col">
+						<img src="./assets/images/knvb_wit.png">
+					</div>
+					<div class="col">
+						<img src="./assets/images/fifa_logo_white.png">
+					</div>
+					<div class="col">
+						<img src="./assets/images/uefa_main2.png">
+					</div>
+					<div class="col">
+						<img src="./assets/images/arag2.png">
+					</div>
+				</div>	
 			</div>
 		</footer>
 
