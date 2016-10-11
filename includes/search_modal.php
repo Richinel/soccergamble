@@ -4,11 +4,13 @@
 
 		<h3>Zoeken</h3>
 
-		<form method="post" action="" class="form">
+		<form method="post" action="search.php?go" class="form" id="searchform">
 		    <div class="form-item">
 		        <div class="controls width-100">
-		            <input type="text">
-		            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+		            <input type="text" name="search_query">
+		            <span>
+		            	<input type="submit" name="submit" value="Zoek" class="go">
+		            </span>
 		        </div>
 		    </div>
 		</form>
