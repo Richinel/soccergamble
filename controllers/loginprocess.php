@@ -3,8 +3,13 @@ session_start();
 
 include('dbconnect.php');
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+function saveText($text) {
+	$cleaned = strip_tags(htmlspecialchars(addslashes(stripslashes( $text ))));
+	return $cleaned;
+}
+
+$username = mysqli_real_escape_string($conn, saveText($_POST['username']));
+$password = mysqli_real_escape_string($conn, saveText($_POST['password']));
 $sql = "SELECT * FROM gebruiker WHERE username = '$username' AND password = '$password'";
 $result = $conn->query($sql);
 

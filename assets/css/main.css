@@ -746,7 +746,8 @@ footer .wrapper table td a:hover {
   text-align: center;
 }
 .top3 .col {
-  background-color: #e6e6e6;
+  border: 1px solid grey;
+  border-radius: 2px;
   margin: 10px;
   padding: 20px;
 }

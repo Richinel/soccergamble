@@ -1,7 +1,7 @@
 <?php
 //error_reporting(0);
 
-include('./includes/header.php');
+include('../includes/header.php');
 include('dbconnect.php');
 
 $username 	= $_POST['username'];
